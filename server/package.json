@@ -1,0 +1,31 @@
+{
+  "name": "streetview-server",
+  "version": "1.0.0",
+  "description": "Backend server for the streetview map application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Streetview App",
+  "license": "MIT",
+  "dependencies": {
+    "array-flatten": "^1.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-signature": "^1.0.7",
+    "cors": "^2.8.5",
+    "depd": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^5.2.1",
+    "merge-descriptors": "^1.0.3",
+    "methods": "^1.1.2",
+    "object-inspect": "^1.13.4",
+    "side-channel": "^1.1.0",
+    "sqlite3": "^5.1.7",
+    "utils-merge": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "streetview-2d-map",
+  "version": "1.0.0",
+  "description": "A 2D map application with street view functionality",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run serve\"",
+    "start": "cd server && npm start",
+    "build": "cd client && npm run build",
+    "setup-db": "cd server && node -e \"require('./config/database.js'); console.log('Database initialized');\"",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "map",
+    "streetview",
+    "location",
+    "vue",
+    "express",
+    "sqlite"
+  ],
+  "author": "Streetview App",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
